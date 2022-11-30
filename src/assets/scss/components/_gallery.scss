@@ -1,0 +1,19 @@
+/* ------------------------------------------------------
+    Event Gallery
+--------------------------------------------------------*/
+
+.gallery {
+    background: #f4f4f4;
+    padding: 4.5em 0 3em;
+
+    &__header {
+        text-align: center;
+        color: #252525;
+        font: 30px/39px "robotoBold";
+        margin-bottom: 40px;
+    }
+
+    &__slider {
+        position: relative;
+    }
+}

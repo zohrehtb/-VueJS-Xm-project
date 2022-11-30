@@ -1,0 +1,74 @@
+/* ------------------------------------------------------
+    Hero
+--------------------------------------------------------*/
+
+.hero {
+    background: linear-gradient(
+        180deg,
+        rgba(32, 46, 71, 0.25) 36.53%,
+        rgba(32, 46, 71, 0.2175) 57.69%,
+        rgba(32, 46, 71, 0.185) 78.84%,
+        rgba(32, 46, 71, 0) 100%
+    );
+    padding: 128px 0 163px;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 8%;
+
+        @media (min-width: 1200px) {
+            padding: 0 22%;
+        }
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+            padding: 0 12%;
+        }
+    }
+
+    &__title2 {
+        font-style: normal;
+        font: 16px/40px "robotoRegular";
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    &__title {
+        font-style: normal;
+        font: 35px/42px "robotoMedium";
+        color: #fff;
+        margin-bottom: 25px;
+    }
+
+    &__synapsis {
+        font-style: normal;
+        font: 16px/24px "robotoRegular";
+        color: #fff;
+        padding: 0 10%;
+        margin-bottom: 40px;
+    }
+
+    &__sublink1,
+    &__sublink1 a {
+        font: 14px/100% "robotoRegular";
+        color: #fff;
+        margin: 40px 0 20px;
+    }
+
+    &__sublink1 a {
+        text-decoration: underline;
+    }
+
+    &__sublink2 {
+        font: 12px/14px "robotoRegular";
+        color: #fff;
+    }
+
+    &__sublink2 span,
+    &__sublink2 a {
+        color: red !important;
+    }
+}

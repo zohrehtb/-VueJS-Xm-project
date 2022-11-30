@@ -1,0 +1,116 @@
+/* ------------------------------------------------------
+    Register
+--------------------------------------------------------*/
+
+.register {
+    margin-top: 6em;
+
+    @media (min-width: 992px) {
+        padding: 0 10%;
+    }
+
+    .form-group {
+        input.form-control {
+            border-radius: 0 !important;
+            height: 40px;
+        }
+
+        label {
+            color: #ffffff;
+        }
+    }
+
+    &__submit {
+        display: flex;
+        justify-content: center;
+        padding: 50px 0 0 0;
+        width: 100%;
+    }
+
+    &__valid-msg {
+        background: #f3fef4;
+        border: 1px solid #31b63b;
+        padding: 47px 32px 57px;
+        display: none;
+
+        &.show {
+            display: block;
+        }
+
+        &__title {
+            font: 24px/28px "robotoMedium";
+            color: #3c763d;
+            margin-bottom: 1.3em;
+            margin-top: 0 !important;
+
+            i {
+                color: #31b63b !important;
+                font-size: 60px !important;
+                margin-right: 10px;
+            }
+        }
+
+        &__synapsis {
+            font: 14px/16px "robotoRegular";
+            color: #3c763d;
+
+            i {
+                font-size: 19px !important;
+                line-height: 22px !important;
+                color: #3c763d !important;
+                margin-right: 15px;
+            }
+        }
+
+        .form-control-feedback {
+            right: 12px !important;
+            top: 28px !important;
+        }
+    }
+
+    &__sublink1,
+    &__sublink1 a {
+        font: 14px/100% "robotoRegular";
+        color: #fff;
+        margin: 40px 0 20px;
+    }
+
+    &__sublink1 a {
+        text-decoration: underline;
+    }
+
+    &__sublink2 {
+        font: 12px/14px "robotoRegular";
+        color: #fff;
+        margin-bottom: 7em;
+    }
+
+    &__sublink1 a,
+    &__sublink2 a {
+        color: red !important;
+    }
+}
+
+.check-pwd {
+    margin-top: 20px;
+
+    &__item {
+        font: 13px/18px "robotoRegular";
+        color: #959595;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        i {
+            margin-right: 5px;
+        }
+
+        &--red {
+            color: red !important;
+        }
+
+        &--green {
+            color: #29a643 !important;
+        }
+    }
+}

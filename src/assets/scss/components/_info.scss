@@ -1,0 +1,132 @@
+/* ------------------------------------------------------
+    Info
+--------------------------------------------------------*/
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    flex-direction: column;
+
+    @media (min-width: 992px) {
+        flex-direction: row;
+    }
+
+    &__col1 {
+        padding: 15px;
+
+        @media (min-width: 992px) {
+            flex: 0 0 33.33%;
+            max-width: 33.33%;
+        }
+    }
+
+    &__col2 {
+        padding: 0 15px;
+
+        @media (min-width: 992px) {
+            flex: 0 0 66.66%;
+            max-width: 66.66%;
+            padding: 15px 15px 15px 0;
+        }
+    }
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        flex-direction: column;
+
+        @media (min-width: 992px) {
+            flex-direction: row;
+        }
+
+        &__col {
+            padding: 15px 0 0 0;
+
+            @media (min-width: 992px) {
+                flex: 0 0 50%;
+                max-width: 50%;
+                padding: 15px 15px 0 0;
+
+                .info__row__col:last-child {
+                    padding-right: 0;
+                }
+            }
+
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+    }
+}
+
+.info-card {
+    border-radius: 10px;
+    padding: 28px 30px;
+
+    @media (min-width: 992px) {
+        padding: 57px 47px;
+    }
+
+    &--fast {
+        background: #0b0819 url("../images/infoBox-fast-execusion-icon.png") no-repeat 93% 28px;
+        height: 100%;
+
+        @media (min-width: 992px) {
+            background-position: 28px 90% !important;
+        }
+
+        @media (max-width: 991px) {
+            background-size: 41px auto;
+        }
+    }
+
+    &--pricing {
+        background: #0b0819 url("../images/infoBox-pricing-icon.png") no-repeat 93% 28px;
+
+        @media (max-width: 991px) {
+            background-size: 80px auto;
+        }
+    }
+
+    &--tech {
+        background: #0b0819 url("../images/infoBox-tech-icon.png") no-repeat 93% 28px;
+        height: 100%;
+
+        @media (max-width: 991px) {
+            background-size: 87px auto;
+        }
+    }
+
+    &--dollar {
+        background: #0b0819 url("../images/infoBox-dollar-icon.png") no-repeat 93% 28px;
+        height: 100%;
+
+        @media (max-width: 991px) {
+            background-size: 60px auto;
+        }
+    }
+
+    &__title {
+        max-width: 225px;
+        position: relative;
+        padding-bottom: 43px;
+        font: 25px/30px "robotoBold";
+        color: #fff;
+
+        &::after {
+            border: 1px solid #29a643;
+            content: "";
+            position: absolute;
+            bottom: 18px;
+            width: 70px;
+            left: 0;
+        }
+    }
+
+    &__synapsis {
+        font: 16px/22px "robotoRegular";
+        color: #fff;
+    }
+}

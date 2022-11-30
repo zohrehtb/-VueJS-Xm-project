@@ -1,0 +1,85 @@
+$parent: ".services";
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (max-width: 991px) {
+        flex-direction: column;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        padding: 40px;
+
+        &__title {
+            font: 19px/25px "robotoBold";
+            color: #444444;
+        }
+
+        &__text {
+            font: 14px/21px "robotoRegular";
+            color: #444444;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    #{$parent}__item {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 40px 80px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        &:first-child::after,
+        &:nth-child(2)::after {
+            width: 254px;
+            content: "";
+            background: #ebebeb;
+            position: absolute;
+            height: 1px;
+        }
+
+        &:nth-child(2)::before,
+        &:nth-child(4)::before {
+            height: 117px;
+            content: "";
+            position: absolute;
+            background: #ebebeb;
+            width: 1px;
+        }
+
+        &:first-child::after {
+            bottom: 0;
+            right: 0;
+        }
+
+        &:nth-child(2)::after {
+            bottom: 0;
+            left: 0;
+        }
+
+        &:nth-child(2)::before {
+            bottom: 0;
+            left: 0;
+        }
+
+        &:nth-child(4)::before {
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    #{$parent}__item__title,
+    #{$parent}__item__text {
+        text-align: center;
+    }
+}

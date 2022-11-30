@@ -1,0 +1,61 @@
+/* ------------------------------------------------------
+    Motto
+--------------------------------------------------------*/
+
+.our-motto {
+    &__title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        padding-top: 26px;
+        margin-bottom: 3em;
+
+        @media (min-width: 1200px) {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        &::before {
+            border: 2px solid #d51820;
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 72px;
+            left: 50%;
+            margin-left: -36px;
+
+            @media (min-width: 1200px) {
+                left: 0;
+                margin-left: 0 !important;
+            }
+        }
+
+        &__content {
+            color: #444444;
+            font: 35px/48px "robotoBold";
+
+            @media (min-width: 1200px) {
+                font: 80px/90px "robotoBold" !important;
+            }
+
+            @media (min-width: 992px) {
+                font-size: 41px;
+            }
+
+            span {
+                color: #d51820;
+            }
+        }
+    }
+
+    &__text {
+        color: #444444;
+        font: 17px/24px "robotoRegular";
+
+        @media (max-width: 1199px) {
+            text-align: center;
+        }
+    }
+}
