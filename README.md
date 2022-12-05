@@ -1,4 +1,4 @@
-# Xm-Challange (Vue)
+# Xm-Challenge (Vue)
 
 ## Project setup
 ```
