@@ -1,4 +1,4 @@
-# vue-xm-project
+# Xm-Challange (Vue)
 
 ## Project setup
 ```
